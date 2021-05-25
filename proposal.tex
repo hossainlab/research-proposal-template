@@ -1,0 +1,45 @@
+\documentclass[a4paper, titlepage, 12pt]{article}
+\usepackage[left=3cm, right=3cm, top=4cm, bottom=4cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{array}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage[square,sort,comma,numbers]{natbib}
+
+% This is a preliminary title for your thesis. Please provide a very meaningful 
+%title to your project. 
+\newcommand{\thesisTitle}{Title of the Research}
+
+% Your full name.
+\newcommand{\name}{John Doe}
+
+% The time frame in which you want to write the thesis.
+\newcommand{\timeFrame}{January 2020 - July 2020}
+
+% The primary supervisor. You probably do not need to change this.
+\newcommand{\supervisor}{Prof. Dr. X}
+
+% The name(s) of your advisor(s). This is probably the PhD student or PostDoc that you are working with.
+\newcommand{\advisor}{Name of Advisor\\Second Advisor (if there is one)}
+\newcommand\todo[1]{\colorbox{yellow}{#1}}
+\setlength{\bibsep}{0.0pt}
+
+\begin{document}
+\input{sections/1_titlepage}
+\input{sections/2_introduction}
+\input{sections/3_problem_statement}
+\input{sections/4_objectives}
+\input{sections/5_literature_review}
+\input{sections/6_research_methodologies}
+\input{sections/7_references} 
+
+\clearpage
+\bibliographystyle{plain}
+{\small 
+\bibliography{references}
+}
+
+\end{document}
